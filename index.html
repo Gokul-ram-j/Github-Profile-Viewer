@@ -5,71 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="mainintro">
-        <div class="bgi"></div>
-        <div class="icontext">
-            <h1>GITHUB PROFILE VIEWER</h1>
+    <div class="mainintro row mb-1 pb-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="bgi">
+                <img src="./assests/Online world-cuate.png" alt="">
+            </div>
         </div>
-        <button class="explore"><a href="#search">SEARCH</a></button>
+
+        <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="icontext">
+                <h1>GITHUB PROFILE VIEWER</h1>
+            </div>
+            <div class="intro-btn ">
+                <button class="explore"><a href="#search">Explore</a></button>
+            </div>
+        </div>
+
     </div>
-    <div id="search" class="intro">
+    <div id="search" class="intro row">
         <form action="">
             <div class="input-group">
                 <input id="username" required="" type="text" name="text" autocomplete="off" class="input">
                 <label class="user-label">GitHub UserName</label>
-              </div>            <button type="submit">search <span class="material-symbols-outlined">person_search</span></button>
+              </div>            
+              <button style="margin-top: 15%;" type="submit">search <span class="material-symbols-outlined">person_search</span></button>
         </form>
     </div>
-    <div class="maincontainer">
-        <div class="profilepic">
+    <div class="maincontainer row">
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-1">
+            <div class="profilepic">
+            </div>
         </div>
-        <div class="context">
-            <h1 class="name">GOKUL RAM</h1>
-            <h4 class="username">gokul-ram-j</h4>
-            <h4 class="bio">hlo everyone</h4>
-            <h4 class="created">created at 2004</h4>
-            <h4 class="email">gokulram221@gmail.com</h4>
-            <h4 class="location">location</h4>
-            <h4 class="followers">folowers:69</h4>
-            <h4 class="repos">total number of repository: 41</h4>
-            <h4 class="url"><a href="">www.gokulram.com</a></h4>
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-1">
+            <div class="context">
+                <h1 class="name">GOKUL RAM</h1>
+                <h4 class="username">gokul-ram-j</h4>
+                <h4 class="bio">hlo everyone</h4>
+                <h4 class="created">created at 2004</h4>
+                <h4 class="email">gokulram221@gmail.com</h4>
+                <h4 class="location">location</h4>
+                <h4 class="followers">folowers:69</h4>
+                <h4 class="repos">total number of repository: 41</h4>
+                <h4 class="url"><a href="">www.gokulram.com</a></h4>
+            </div>
         </div>
         <div class="nouser">
             <h1>NO USER EXIST</h1>
         </div>
     </div>
     <h1 class="title">REPOSITORY</h1>
-    <div class="repocontainer">
-        <!-- <div class="repo">
-            <h1 class="reponame">repository 1</h1>
-            <h2>Description</h2>
-            <P class="description">it is a react project</P>
-            <h2>Created At</h2>
-            <P class="repocreated">created at 2006</P>
-            <h2>URL</h2>
-            <P class="repourl"><a href="">www.gmail.com</a></P>
-            <h2>Languages Used</h2>
-            <P class="language">python</h4>
-            <h2>Star Count</h2>
-            <P class="starcount">
-                <span class="material-symbols-outlined">
-                star
-                </span>star
-            </P>
-            <h2>Watchers</h2>
-            <P class="watchers">
-                <span class="material-symbols-outlined">
-                visibility
-                </span>
-                watchers
-            </P>
-            <h2>License</h2>
-            <P class="license lastinfo">MIT</P>
-        </div> -->
+    <div class="repocontainer row p-3">
+        
+       
     </div>
+    <script src="./bootstrap.bundle.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>

@@ -45,8 +45,10 @@ function getResponse(username){
           .then((res) => res.json())
           .then((data) => {
             data.forEach(repo => {
-                let repocontain=`<div class="repo">
-                <h1 class="reponame">${repo.name} 1</h1>
+                let repocontain=`
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="repo">
+                <h1 class="reponame">${repo.name}</h1>
                 <h2>Description</h2>
                 <P class="description">${repo.description}</P>
                 <h2>Created At</h2>
@@ -70,7 +72,10 @@ function getResponse(username){
                 </P>
                 <h2>License</h2>
                 <P class="license lastinfo">${repo.license?.name}</P>
-            </div>`
+                </div>
+                </div>
+            
+            `
                 repocontainer.innerHTML+=repocontain
             });
             
